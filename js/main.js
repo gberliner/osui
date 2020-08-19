@@ -3658,8 +3658,7 @@ function showOptions( expandItem ) {
 					case "o41":
 						if ( page.find( "#o41-units" ).val() === "gallon" ) {
 							data = data * 3.78541;
-						}
-						if ( page.find( "#o41-units" ).val() === "milliliter" ) {
+						} else if ( page.find( "#o41-units" ).val() === "milliliter" ) {
 							data = data / 1000.0;
 						}
 
